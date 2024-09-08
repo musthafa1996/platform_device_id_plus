@@ -1,0 +1,38 @@
+name: platform_device_id_plus
+description: You can get device id from platform - linux/mac/windows/android/ios/web.
+version: 1.0.2
+homepage: https://github.com/musthafa1996/platform_device_id_plus
+
+environment:
+  sdk: '>=2.12.0 <4.0.0'
+  flutter: ">=1.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  platform_device_id_plus_platform_interface: ^1.0.2
+  platform_device_id_plus_macos: ^1.0.2
+  platform_device_id_plus_linux: ^1.0.2
+  platform_device_id_plus_web: ^1.0.2
+  platform_device_id_plus_windows: ^1.0.2
+  android_id: ^0.4.0
+  device_info_plus: ^10.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      ios:
+        pluginClass: PlatformDeviceIdPlugin
+      macos:
+        pluginClass: PlatformDeviceIdMacosPlugin
+      linux:
+        default_package: platform_device_id_plus_linux
+      web:
+        default_package: platform_device_id_plus_web
+      windows:
+        default_package: platform_device_id_plus_windows
+

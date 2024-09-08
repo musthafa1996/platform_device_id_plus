@@ -4,28 +4,27 @@ get device id from android、ios、windows、linux、mac、web
 
 ## Description
 
-- Windows
+- Windows 
 
 `BIOS UUID` e.g. `99A4D301-53F5-11CB-8CA0-9CA39A9E1F01`
-- Linux
+- Linux 
 
 `BIOS UUID` e.g. `32a70060-2a39-437e-88e2-d68e6154de9f`
-- Mac
+- Mac 
 
 `IOPlatformUUID` e.g. `02662E79-E342-521C-98EA-D4C18B61FEF3`
 
-- Android
+- Android 
 
 `AndroidId` e.g. `9774d56d682e549c`
 
-- IOS
+- IOS 
 
 `IdentifierForVendor` e.g. `9C287922-EE26-4501-94B5-DDE6F83E1475`
 
 - Web
 
 `UserAgent` e.g. `Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36`
-
 
 ## Getting Started
 
@@ -36,20 +35,6 @@ import 'package:platform_device_id_plus/platform_device_id_plus.dart';
 
 String? deviceId = await PlatformDeviceId.getDeviceId;
 ```
-## Support Platform 
-
-- [x] Android
-- [x] IOS
-- [x] MacOS
-- [x] Windows
-- [x] Linux
-- [x] Web
-
-## TODO
-
-- [ ] Support Dart Native platform device id
-- [ ] Web id change
-
 ## Plugins Info
 
 | Plugin | Pub | Points | Popularity | Likes |
@@ -64,4 +49,4 @@ String? deviceId = await PlatformDeviceId.getDeviceId;
 
 ## Go-flutter for windows/macos/linux
 
-see [here](platform_device_id_plus/go)
+see [here](https://github.com/musthafa1996/platform_device_id_plus/tree/master/platform_device_id_plus/go)
